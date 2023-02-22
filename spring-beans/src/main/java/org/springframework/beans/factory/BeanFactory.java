@@ -21,6 +21,7 @@ import org.springframework.core.ResolvableType;
 import org.springframework.lang.Nullable;
 
 /**
+ * 工厂方法模式、原型设计模式
  * The root interface for accessing a Spring bean container.
  *
  * <p>This is the basic client view of a bean container;
@@ -31,7 +32,7 @@ import org.springframework.lang.Nullable;
  * <p>This interface is implemented by objects that hold a number of bean definitions,
  * each uniquely identified by a String name. Depending on the bean definition,
  * the factory will return either an independent instance of a contained object
- * (the Prototype design pattern), or a single shared instance (a superior
+ * (the Prototype design pattern: 原型设计模式), or a single shared instance (a superior
  * alternative to the Singleton design pattern, in which the instance is a
  * singleton in the scope of the factory). Which type of instance will be returned
  * depends on the bean factory configuration: the API is the same. Since Spring
